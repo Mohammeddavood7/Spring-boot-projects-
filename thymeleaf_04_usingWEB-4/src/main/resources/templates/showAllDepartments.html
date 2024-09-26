@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http//www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body >
+    <div align="center">
+    <a th:href="@{/addDepartmentViewFile}">add department</a>
+    <table border="1">
+    <caption>Department Details</caption>
+    <tr th:each="dept : ${depts}">
+       <td th:text="${dept.deptId}"/>
+       <td th:text="${dept.deptName}"/>
+       <td th:text="${dept.deptLocation}"/>
+       <td><a th:href="@{/updateViewDepartment/{id}(id=${dept.deptId})}">update</a></td>
+       <td><a th:href="@{/deleteDepartment/{id}(id=${dept.deptId})}">delete</a></td>
+    </tr>
+    </table>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Thymeleaf Content</h1>
+	Date is :
+	<p th:text="${showDates}" />
+	
+	<table border="1">
+    <tr th:each="name : ${names}">
+        <td th:text="${name}"></td>
+    </tr>
+  </table>
+
+</body>
+</html>

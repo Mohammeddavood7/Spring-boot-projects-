@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body >
+     <div align="center">
+     <form th:action="@{/updatedDepartment}" th:object="${update}" method="post">
+          <table border="1">
+          <caption>Add Department Details</caption>
+                <tr>
+                <th>Department Id: </th> <td> <input type="text" th:field="*{deptId}" readonly="readonly"/> </td>
+              </tr>
+               <tr>
+              <th>Department Name: </th> <td> <input type="text" th:field="*{deptName}"/> </td>
+              </tr>
+              <tr>
+              <th>Department Location: </th> <td><input type="text" th:field="*{deptLocation}"/> </td>
+              </tr>
+              <tr align="center">
+               <td colspan="2"> <input type="submit"/> </td>
+              </tr>
+           </table>
+     </form>
+     </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

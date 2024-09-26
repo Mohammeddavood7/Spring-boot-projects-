@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring_security_03
+  datasource:
+    url: jdbc:mysql://localhost/springjpa
+    username: root
+    password: Tiger@13
+  jpa:
+    hibernate:
+      ddl-auto: update
